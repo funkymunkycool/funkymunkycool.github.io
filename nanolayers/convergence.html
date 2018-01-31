@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../stuff/button.css">
     <link rel="stylesheet" href="../css/theme/sky.css">
     <link rel="stylesheet" href="../lib/css/zenburn.css">
-    <script src="../js/plotly-latest.min.js"></script>
+    <script src="../plotly-latest.min.js"></script>
   </head>
   <body>
     <div class="reveal">
@@ -19,9 +19,9 @@
 - Converging Cell Sizes
 - Optimizing Hybrid Functionals 
 - Applying Electric Fields 
+- Automation for the Consumer 
 
-
-<span style="color:red"> 19$^\textrm{th}$ January 2018 </span>
+<span style="color:red"> 30$^\textrm{th}$ January 2018 </span>
 </textarea>
 </section>
 
@@ -76,6 +76,7 @@
 - We use a hybrid functional with a truncated Coulomb operator 
 - Two parameters to optimize: amount of exchange, truncation radius 
   - GeTe only needs 10% HF exchange
+  - Truncation radius of 4 &#8491; 
 
 
 </textarea>
@@ -84,15 +85,36 @@
 
 <section>
 <img class="header plain" src="figs/nanolayers_logo.png" width="22%" style="border:none">
-<ul style="width: 40%;">
-<li> We use a hybrid functional with a truncated Coulomb operator </li>
-<li> Two parameters to optimize: amount of exchange, truncation radius </li>
+<ul style="width: 40%;transform: translate(0%,-25%);">
+<li> An electric field can be applied across GeTe</li> 
+<li> Field can be applied in any direction</li>
+<li> Qualitative results easy to obtain</li>
+<li> However, quantitative results a little tricky</li>
 </ul>
-<img src="./figs/gete_efield.gif" width="15%" style="border:none" >
+<img src="./figs/gete_efield.gif" height="90%" style="border:2px solid lightgray;" >
 
 </section>
 
+<section data-markdown><textarea data-template>
+<img class="header plain" src="figs/nanolayers_logo.png" width="22%" style="border:none">
+### Automating the system (technical)
+- Real space grids, size, and convergence can all be automated 
+- Hybrid functional can also be optimized
+- Is hybrid necessary. Extra layer of complexity
+- Electric field calculations have potential to be automated. Not in near future
+</textarea>
+</section>
 
+<section data-markdown><textarea data-template>
+<img class="header plain" src="figs/nanolayers_logo.png" width="22%" style="border:none">
+### Automating the system (consumer)
+- Defect levels 
+- Charge transition levels 
+- Dopant/Impurities 
+- Electric field (long-term) 
+- I/V relationships (very long-term) 
+</textarea>
+</section>
 			</div>
 		</div>
 		<script src="../js/reveal.js"></script>
