@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Quartz Vacancy Electron Transfer</title>
+    <link rel="stylesheet" href="../css/reveal.css">
+    <link rel="stylesheet" href="../stuff/button.css">
+    <link rel="stylesheet" href="../css/theme/sky.css">
+    <link rel="stylesheet" href="../lib/css/zenburn.css">
+    <script src="../plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <div class="reveal">
+	    <header style="position: absolute;top: 3vh; left: 5vw; z-index: 500;"></header>
+      <div class="slides">
+
+
+<section>
+<img src="figs/vacancy.png" height="60%" style="border:2px solid lightgray;">
+<h3>Effect of Field on Vacancy Electron Transfer</h3>
+
+</section>
+
+
+<section data-markdown>
+<textarea data-template>
+- PBE0 optimization of $\alpha$-quartz 
+- Introduce two vacancies with charge 0 and -2 
+
+<img class="plain" src="figs/aquartz_dvacancy_dnegative_dos.svg">
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+### Applying Fields of up to +/- 10 MV cm$^{-1}$ does not cause spontaneous electron transfer
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+	<img class="plain" src="figs/aquartz_dvacancy_dnegative_barrier_nofield.svg">
+	### Calculate barrier using NEB: 1.2 eV
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+<img src="figs/vacancy_migrate.gif" height="60%" style="border:2px solid lightgray;" > 
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+<img src="figs/aquartz_dvacancy_dnegative_energy_field.svg" height="60%" style="border:2px solid lightgray;" > 
+
+Applying field of +10 MV cm$^{-1}$ increases barrier by 1 eV
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+<img src="figs/aquartz_dvacancy_dnegative_dipole_field.svg" height="60%" style="border:2px solid lightgray;" > 
+
+Dipole moment change suggests similar barrier change for negative field
+</textarea>
+</section>
+
+			</div>
+		</div>
+		<script src="../js/reveal.js"></script>
+                <script src="../lib/js/head.min.js"></script>
+		<script src="../plugin/markdown/marked.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/math/math.js"></script>
+		<script>
+                Reveal.initialize({slideNumber: true,transition: 'fade',transitionSpeed: 'fast'});
+		</script>
+	</body>
+</html>
+
